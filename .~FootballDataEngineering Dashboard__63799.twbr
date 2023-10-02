@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='stadium_cleaned_2023-10-01_22_37_47.376621' inline='true' name='federated.09b9rka1n3q36o1clh6td15n720y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stadium_cleaned_2023-10-01_22_37_47.376621' name='textscan.1l2olbp0h0ogyg14c39dx1vdqd5u'>
+            <connection class='textscan' directory='/Users/airscholar/Downloads' filename='stadium_cleaned_2023-10-01_22_37_47.376621.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1l2olbp0h0ogyg14c39dx1vdqd5u' name='stadium_cleaned_2023-10-01_22_37_47.376621.csv' table='[stadium_cleaned_2023-10-01_22_37_47.376621#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='rank' ordinal='0' />
+            <column datatype='string' name='stadium' ordinal='1' />
+            <column datatype='integer' name='capacity' ordinal='2' />
+            <column datatype='string' name='region' ordinal='3' />
+            <column datatype='string' name='country' ordinal='4' />
+            <column datatype='string' name='city' ordinal='5' />
+            <column datatype='string' name='images' ordinal='6' />
+            <column datatype='string' name='home_team' ordinal='7' />
+            <column datatype='string' name='location' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1l2olbp0h0ogyg14c39dx1vdqd5u' name='stadium_cleaned_2023-10-01_22_37_47.376621.csv' table='[stadium_cleaned_2023-10-01_22_37_47.376621#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='rank' ordinal='0' />
+            <column datatype='string' name='stadium' ordinal='1' />
+            <column datatype='integer' name='capacity' ordinal='2' />
+            <column datatype='string' name='region' ordinal='3' />
+            <column datatype='string' name='country' ordinal='4' />
+            <column datatype='string' name='city' ordinal='5' />
+            <column datatype='string' name='images' ordinal='6' />
+            <column datatype='string' name='home_team' ordinal='7' />
+            <column datatype='string' name='location' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stadium</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stadium]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>stadium</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>capacity</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>images</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[images]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>images</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>home_team</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[stadium_cleaned_2023-10-01_22_37_47.376621.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='RegionCount' datatype='integer' name='[Calculation_4489455516772052992]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([stadium])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='stadium_cleaned_2023-10-01_22_37_47.376621.csv' datatype='table' name='[__tableau_internal_object_id__].[stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D]' role='measure' type='quantitative' />
+      <column caption='Capacity' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+      <column caption='City - Split 1' datatype='string' name='[city - Split 1]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.09b9rka1n3q36o1clh6td15n720y].[city]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [city], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;Scotland&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;Wales&quot;' value='&quot;United Kingdom&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+      <column caption='Images' datatype='string' name='[images]' role='dimension' semantic-role='[URL]' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Rank' datatype='integer' name='[rank]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Stadium' datatype='string' name='[stadium]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='country, city'>
+          <field>[country]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='stadium_cleaned_2023-10-01_22_37_47.376621.csv' id='stadium_cleaned_2023-10-01_22_37_47.376621.csv_58002140A41B40E6954425F89A841A8D'>
+            <properties context=''>
+              <relation connection='textscan.1l2olbp0h0ogyg14c39dx1vdqd5u' name='stadium_cleaned_2023-10-01_22_37_47.376621.csv' table='[stadium_cleaned_2023-10-01_22_37_47.376621#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='rank' ordinal='0' />
+                  <column datatype='string' name='stadium' ordinal='1' />
+                  <column datatype='integer' name='capacity' ordinal='2' />
+                  <column datatype='string' name='region' ordinal='3' />
+                  <column datatype='string' name='country' ordinal='4' />
+                  <column datatype='string' name='city' ordinal='5' />
+                  <column datatype='string' name='images' ordinal='6' />
+                  <column datatype='string' name='home_team' ordinal='7' />
+                  <column datatype='string' name='location' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Geographical Distribution of Stadiums'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stadium_cleaned_2023-10-01_22_37_47.376621' name='federated.09b9rka1n3q36o1clh6td15n720y' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.09b9rka1n3q36o1clh6td15n720y'>
+            <column caption='City - Split 1' datatype='string' name='[city - Split 1]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.09b9rka1n3q36o1clh6td15n720y].[city]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [city], &quot;,&quot;, 1 ) )' />
+            </column>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Scotland&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Wales&quot;' value='&quot;United Kingdom&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Images' datatype='string' name='[images]' role='dimension' semantic-role='[URL]' type='nominal' />
+            <column-instance column='[city - Split 1]' derivation='None' name='[none:city - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[images]' derivation='None' name='[none:images:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stadium]' derivation='None' name='[none:stadium:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Stadium' datatype='string' name='[stadium]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09b9rka1n3q36o1clh6td15n720y].[Longitude (generated)]' field-type='quantitative' max='8931736.8122333121' min='-9504411.7846343163' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.09b9rka1n3q36o1clh6td15n720y].[Latitude (generated)]' field-type='quantitative' max='14986221.420893097' min='-1572380.657374064' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' />
+              <lod column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:country:nk]' />
+              <lod column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:city - Split 1:nk]' />
+              <lod column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:images:nk]' />
+              <lod column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:stadium:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09b9rka1n3q36o1clh6td15n720y].[Latitude (generated)]</rows>
+        <cols>[federated.09b9rka1n3q36o1clh6td15n720y].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D606722D-F7D2-44F1-AA65-41A4396D01CF}' />
+    </worksheet>
+    <worksheet name='Stadiums Location By Regions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stadium_cleaned_2023-10-01_22_37_47.376621' name='federated.09b9rka1n3q36o1clh6td15n720y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09b9rka1n3q36o1clh6td15n720y'>
+            <column caption='RegionCount' datatype='integer' name='[Calculation_4489455516772052992]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([stadium])' />
+            </column>
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4489455516772052992]' derivation='User' name='[pcto:usr:Calculation_4489455516772052992:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Stadium' datatype='string' name='[stadium]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4489455516772052992]' derivation='User' name='[usr:Calculation_4489455516772052992:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' />
+              <text column='[federated.09b9rka1n3q36o1clh6td15n720y].[pcto:usr:Calculation_4489455516772052992:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09b9rka1n3q36o1clh6td15n720y].[usr:Calculation_4489455516772052992:qk]</rows>
+        <cols>[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]</cols>
+      </table>
+      <simple-id uuid='{0C11220E-7D5A-46D2-B3FB-0BEE6E3706B2}' />
+    </worksheet>
+    <worksheet name='Top 10 Stadiums By Capacity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stadium_cleaned_2023-10-01_22_37_47.376621' name='federated.09b9rka1n3q36o1clh6td15n720y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09b9rka1n3q36o1clh6td15n720y'>
+            <column caption='Capacity' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+            <column-instance column='[stadium]' derivation='None' name='[none:stadium:nk]' pivot='key' type='nominal' />
+            <column caption='Stadium' datatype='string' name='[stadium]' role='dimension' type='nominal' />
+            <column-instance column='[capacity]' derivation='Sum' name='[sum:capacity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:stadium:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([capacity])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:stadium:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:stadium:nk]' direction='DESC' using='[federated.09b9rka1n3q36o1clh6td15n720y].[sum:capacity:qk]' />
+          <slices>
+            <column>[federated.09b9rka1n3q36o1clh6td15n720y].[none:stadium:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.09b9rka1n3q36o1clh6td15n720y].[sum:capacity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09b9rka1n3q36o1clh6td15n720y].[none:stadium:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{946D0ADE-5364-4A83-AB94-10655A939CC9}' />
+    </worksheet>
+    <worksheet name='Top 10 Stadiums By Rank'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stadium_cleaned_2023-10-01_22_37_47.376621' name='federated.09b9rka1n3q36o1clh6td15n720y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09b9rka1n3q36o1clh6td15n720y'>
+            <column-instance column='[rank]' derivation='None' name='[none:rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stadium]' derivation='None' name='[none:stadium:nk]' pivot='key' type='nominal' />
+            <column caption='Rank' datatype='integer' name='[rank]' role='measure' type='quantitative' />
+            <column caption='Stadium' datatype='string' name='[stadium]' role='dimension' type='nominal' />
+            <column-instance column='[rank]' derivation='Sum' name='[sum:rank:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:rank:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <computed-sort column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:stadium:nk]' direction='ASC' using='[federated.09b9rka1n3q36o1clh6td15n720y].[sum:rank:qk]' />
+          <slices>
+            <column>[federated.09b9rka1n3q36o1clh6td15n720y].[none:rank:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.09b9rka1n3q36o1clh6td15n720y].[sum:rank:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09b9rka1n3q36o1clh6td15n720y].[none:stadium:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{57FE7A71-144C-4D6A-B81B-F251BA1E415D}' />
+    </worksheet>
+    <worksheet name='Top Stadiums By Capacity '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stadium_cleaned_2023-10-01_22_37_47.376621' name='federated.09b9rka1n3q36o1clh6td15n720y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09b9rka1n3q36o1clh6td15n720y'>
+            <column caption='Capacity' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[capacity]' derivation='Sum' name='[pcto:sum:capacity:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='337' />
+            <format attr='height' value='312' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' />
+              <text column='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' />
+              <text column='[federated.09b9rka1n3q36o1clh6td15n720y].[pcto:sum:capacity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E912E8E0-133D-4139-A1C6-093462240B95}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98290' id='7' param='horz' type-v2='layout-flow' w='98948' x='526' y='855'>
+            <zone h='98290' id='5' type-v2='layout-basic' w='98948' x='526' y='855'>
+              <zone h='60117' id='3' name='Geographical Distribution of Stadiums' w='89243' x='526' y='39028'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38173' id='9' name='Top Stadiums By Capacity ' w='24738' x='74736' y='855'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38173' id='10' name='Top 10 Stadiums By Rank' w='17726' x='526' y='855'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38173' id='11' name='Top 10 Stadiums By Capacity' w='18356' x='18252' y='855'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38173' id='12' name='Stadiums Location By Regions' w='38128' x='36608' y='855'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='101' h='60117' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9705' x='89769' y='39028'>
+                <zone h='22009' id='8' name='Geographical Distribution of Stadiums' pane-specification-id='0' param='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' type-v2='color' w='9705' x='89769' y='39028'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97978' id='13' param='vert' type-v2='layout-flow' w='98720' x='640' y='1011'>
+                <zone fixed-size='280' h='38053' id='10' is-fixed='true' name='Top 10 Stadiums By Rank' w='17687' x='640' y='1011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38053' id='11' is-fixed='true' name='Top 10 Stadiums By Capacity' w='18313' x='18327' y='1011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38053' id='12' is-fixed='true' name='Stadiums Location By Regions' w='38040' x='36640' y='1011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38053' id='9' is-fixed='true' name='Top Stadiums By Capacity ' w='24680' x='74680' y='1011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59925' id='3' is-fixed='true' name='Geographical Distribution of Stadiums' w='89040' x='640' y='39064'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='26043' id='8' name='Geographical Distribution of Stadiums' pane-specification-id='0' param='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' type-v2='color' w='9680' x='89680' y='39064'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{77875DBB-D69E-4002-A955-3243DBBDB21C}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='worksheet' name='Stadiums Location By Regions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C5F00AF0-1490-48AF-8EA5-60944C9F80E8}' />
+    </window>
+    <window class='worksheet' name='Top 10 Stadiums By Capacity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BAD0305B-C6AF-44A1-B468-8CF4089834DE}' />
+    </window>
+    <window class='worksheet' name='Top 10 Stadiums By Rank'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EE325362-2059-42AB-AB34-702C303BC9D8}' />
+    </window>
+    <window class='worksheet' name='Top Stadiums By Capacity '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC23063E-4C96-4AF9-AB25-DDB5B47150BC}' />
+    </window>
+    <window class='worksheet' name='Geographical Distribution of Stadiums'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09b9rka1n3q36o1clh6td15n720y].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{CEE96B51-B243-4DED-B5E5-0990C937EE8F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Geographical Distribution of Stadiums'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stadiums Location By Regions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Stadiums By Capacity' />
+        <viewpoint name='Top 10 Stadiums By Rank' />
+        <viewpoint name='Top Stadiums By Capacity ' />
+      </viewpoints>
+      <active id='3' />
+      <device-preview visible='true' />
+      <simple-id uuid='{7E8182DE-E06B-4767-A8DF-0AFAFD9BD586}' />
+    </window>
+  </windows>
+</workbook>
